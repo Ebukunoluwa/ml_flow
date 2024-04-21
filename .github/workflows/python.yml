@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  test-python-3.8:
+  test_python_38:
     name: Test with Python 3.8
     runs-on: ubuntu-latest
     strategy:
@@ -31,7 +31,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
 
-  test-python-3.9:
+  test_python_39:
     name: Test with Python 3.9
     runs-on: ubuntu-latest
     strategy:
@@ -52,8 +52,6 @@ jobs:
       - name: Run tests
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
-
-
 
 
 
